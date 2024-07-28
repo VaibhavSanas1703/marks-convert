@@ -1,0 +1,105 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Inter",sans-serif;
+}
+
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.top-headings{
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.top-headings h1{
+   font-size: clamp(2rem,7vw,2.5rem);
+   margin: 5px 0;
+}
+
+.main-container{
+   width: 400px;
+   height: auto;
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.inputs{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.inputs input,select,button{
+   width: 100%;
+   height: 45px;
+   padding: 0 10px;
+   outline: none;
+   font-size: 16px;
+   border: 0;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   margin-bottom: 5px;
+   border: 1px solid rgba(0,0,0,0.2);
+}
+
+button{
+   margin: 15px 0;
+   border: none;
+   background: royalblue;
+   color: white;
+   cursor: pointer;
+}
+
+.result{
+   width: 100%;
+   margin: 20px 0;
+   text-align: center;
+   display: none;
+   transition: display .50s;
+   -webkit-transition: display .50s;
+   -moz-transition: display .50s;
+   -ms-transition: display .50s;
+   -o-transition: display .50s;
+}
+
+.result p{
+   margin-bottom: 15px;
+}
+
+.toggle-res{
+   display: block;
+}
+
+@media screen and (max-width:600px){
+   .main-container{
+      width: 92%;
+   }
+
+   .result{
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+   }
+}
+
